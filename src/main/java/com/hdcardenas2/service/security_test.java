@@ -21,8 +21,8 @@ import javax.jws.WebParam;
  *
  * @author hernandario
  */
-@WebService(serviceName = "security")
-public class security {
+@WebService(serviceName = "security_test")
+public class security_test {
 
     /**
      * Login app

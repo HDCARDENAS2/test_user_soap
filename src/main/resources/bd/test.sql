@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-05-2018 a las 04:41:51
+-- Tiempo de generación: 27-05-2018 a las 00:24:08
 -- Versión del servidor: 10.1.32-MariaDB
 -- Versión de PHP: 7.2.5
 
@@ -30,7 +30,6 @@ USE `test`;
 -- Estructura de tabla para la tabla `detail_users_roll`
 --
 
-DROP TABLE IF EXISTS `detail_users_roll`;
 CREATE TABLE `detail_users_roll` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
@@ -42,7 +41,12 @@ CREATE TABLE `detail_users_roll` (
 --
 
 INSERT INTO `detail_users_roll` (`id`, `user_id`, `roll_id`) VALUES
-(3, 1, 287);
+(1, 1, 286),
+(3, 1, 287),
+(4, 1, 288),
+(5, 1, 289),
+(7, 1, 290),
+(8, 1, 291);
 
 -- --------------------------------------------------------
 
@@ -50,7 +54,6 @@ INSERT INTO `detail_users_roll` (`id`, `user_id`, `roll_id`) VALUES
 -- Estructura de tabla para la tabla `roll`
 --
 
-DROP TABLE IF EXISTS `roll`;
 CREATE TABLE `roll` (
   `id` int(11) NOT NULL,
   `name` text NOT NULL
@@ -61,6 +64,8 @@ CREATE TABLE `roll` (
 --
 
 INSERT INTO `roll` (`id`, `name`) VALUES
+(1, 'test'),
+(8, 'datos'),
 (286, 'Administrador SIUT'),
 (287, 'Solicitante SIUT'),
 (288, 'Revisión BPY'),
@@ -74,7 +79,6 @@ INSERT INTO `roll` (`id`, `name`) VALUES
 -- Estructura de tabla para la tabla `users`
 --
 
-DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `user` text NOT NULL,
@@ -120,7 +124,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `detail_users_roll`
 --
 ALTER TABLE `detail_users_roll`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `roll`

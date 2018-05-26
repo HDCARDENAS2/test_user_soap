@@ -4,13 +4,13 @@
         <listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
     </listener>
     <servlet>
-        <servlet-name>security</servlet-name>
+        <servlet-name>security_test</servlet-name>
         <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>security</servlet-name>
-        <url-pattern>/security</url-pattern>
+        <servlet-name>security_test</servlet-name>
+        <url-pattern>/security_test</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
